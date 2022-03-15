@@ -1,0 +1,13 @@
+package com.talent.market.live.common.category;
+
+import lombok.Data;
+
+/**
+ * @author huangzhengwei
+ * @desc
+ */
+@Data
+public class GetCategoryCommon {
+
+    private String categoryId;
+}

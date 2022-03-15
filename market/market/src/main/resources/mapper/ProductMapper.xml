@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.talent.market.live.dao.ProductMapper">
+  <resultMap id="BaseResultMap" type="com.talent.market.live.model.Product">
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="category_id" jdbcType="VARCHAR" property="categoryId" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="subtitle" jdbcType="VARCHAR" property="subtitle" />
+    <result column="sub_images" jdbcType="NVARCHAR" property="subImages" />
+    <result column="detail" jdbcType="NVARCHAR" property="detail" />
+    <result column="main_image" jdbcType="VARCHAR" property="mainImage" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="update_by" jdbcType="VARCHAR" property="updateBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <update id="updateByPrimaryKeySelective" parameterType="com.talent.market.live.common.product.SaveOrUpdateProductCommon">
+    update talent_product
+    <set>
+      <if test="categoryId != null">
+        category_id = #{categoryId},
+      </if>
+      <if test="name != null">
+        name = #{name},
+      </if>
+      <if test="subtitle != null">
+        subtitle = #{subtitle},
+      </if>
+      <if test="mainImage != null">
+        main_image = #{mainImage},
+      </if>
+      <if test="price != null">
+        price = #{price},
+      </if>
+      <if test="stock != null">
+        stock = #{stock},
+      </if>
+      <if test="status != null">
+        status = #{status},
+      </if>
+      <if test="isDeleted != null">
+        is_deleted = #{isDeleted},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy},
+      </if>
+      <if test="createBy != null">
+        create_by = #{createBy},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime},
+      </if>
+      <if test="subImages != null">
+        sub_images = #{subImages},
+      </if>
+      <if test="detail != null">
+        detail = #{detail},
+      </if>
+    </set>
+    where id = #{id}
+  </update>
+
+
+</mapper>
