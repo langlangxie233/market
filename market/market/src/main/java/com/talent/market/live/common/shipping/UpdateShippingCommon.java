@@ -3,7 +3,7 @@ package com.talent.market.live.common.shipping;
 import lombok.Data;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 @Data

@@ -8,7 +8,7 @@ import com.google.common.cache.LoadingCache;
 import java.util.concurrent.TimeUnit;
 
 /**        is_delete ,enum,DateuUtil,BgdecimalUtile,
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc       (spu sku)   库存表  活动表（3）秒杀，满减，换购 ，   分销（3）    余额表（）  公告表
  */
 public class TokenCache {

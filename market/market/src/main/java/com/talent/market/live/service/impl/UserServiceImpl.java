@@ -22,7 +22,10 @@ import java.util.List;
 import java.util.UUID;
 
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @Service
 public class UserServiceImpl implements UserService {
 

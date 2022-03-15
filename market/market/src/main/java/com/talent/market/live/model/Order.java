@@ -5,6 +5,11 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.Date;
+
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @TableName(value = "talent_order")
 @Data
 public class Order {

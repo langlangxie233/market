@@ -7,7 +7,10 @@ import com.talent.market.live.common.cart.UpdateProductCartCommon;
 import com.talent.market.live.model.User;
 import com.talent.market.live.util.ServerResponse;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 public interface CartService {
     ServerResponse addProductCart(AddProductCartCommon cartCommon, User user);
 

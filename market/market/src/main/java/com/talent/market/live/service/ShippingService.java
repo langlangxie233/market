@@ -6,7 +6,10 @@ import com.talent.market.live.common.shipping.ListShippingCommon;
 import com.talent.market.live.common.shipping.UpdateShippingCommon;
 import com.talent.market.live.util.ServerResponse;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 public interface ShippingService {
     ServerResponse addShipping(AddShippingCommon common, String userId);
 

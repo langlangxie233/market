@@ -12,7 +12,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.UUID;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @Service
 public class FileServiceImpl implements FileService {
     @Value("${ftp.server.http.prefix}")

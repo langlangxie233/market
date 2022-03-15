@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 public class PropertiesUtil {

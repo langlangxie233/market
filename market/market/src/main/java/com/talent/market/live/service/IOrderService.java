@@ -6,7 +6,10 @@ import com.talent.market.live.vo.OrderVo;
 
 import java.util.Map;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 public interface IOrderService {
     ServerResponse pay(String orderNo, String userId, String path);
     ServerResponse aliCallback(Map<String, String> params);

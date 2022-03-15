@@ -6,7 +6,10 @@ import com.talent.market.live.common.category.SetCategoryNameCommon;
 import com.talent.market.live.model.User;
 import com.talent.market.live.util.ServerResponse;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 public interface CategoryService {
     ServerResponse addCategory(AddCategoryCommon common, String username);
 

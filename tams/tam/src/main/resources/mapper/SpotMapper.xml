@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxl.tam.dao.SpotMapper">
+  <resultMap id="BaseResultMap" type="com.xxl.tam.model.Spot">
+    <id column="spot_id" jdbcType="VARCHAR" property="spotId" />
+    <result column="spot_type" jdbcType="INTEGER" property="spotType" />
+    <result column="spot_name" jdbcType="VARCHAR" property="spotName" />
+    <result column="spot_address" jdbcType="VARCHAR" property="spotAddress" />
+    <result column="spot_days" jdbcType="INTEGER" property="spotDays" />
+    <result column="spot_price" jdbcType="DECIMAL" property="spotPrice" />
+    <result column="spot_available" jdbcType="INTEGER" property="spotAvailable" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    spot_id, spot_type, spot_name, spot_address, spot_days, spot_price, spot_available
+  </sql>
+
+</mapper>

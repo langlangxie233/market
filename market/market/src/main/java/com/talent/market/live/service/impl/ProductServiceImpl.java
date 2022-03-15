@@ -26,7 +26,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @Service
 public class ProductServiceImpl implements ProductService {
 
@@ -43,7 +46,7 @@ public class ProductServiceImpl implements ProductService {
     public ServerResponse productManageList(ProductManageListCommon common) {
         PageHelper.startPage(common.getPageNum(),common.getPageSize());
         List<Product> products = productMapper.selectList(null);
-        PageInfo<Product> productPageInfo = new PageInfo<Product>(products);
+        PageInfo<Product> productPageInfo = new PageInfo<>(products);
 
         return ServerResponse.createBySuccess("成功",productPageInfo);
     }
@@ -164,7 +167,7 @@ public class ProductServiceImpl implements ProductService {
         products.forEach(p->{
             ProductListVo productListVo = new ProductListVo();
             BeanUtils.copyProperties(p,productListVo);
-            String[] images = p.getSubImages().split(",");
+            String[] images = p.getMainImage().split(",");
             productListVo.setMainImage(images[0]);
             productListVo.setImageHost("http://image.talent.com/");
             listVos.add(productListVo);

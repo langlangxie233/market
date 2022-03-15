@@ -5,7 +5,10 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @Data
 public class OrderListVo {
 

@@ -4,7 +4,10 @@ import com.talent.market.live.common.product.*;
 import com.talent.market.live.model.User;
 import com.talent.market.live.util.ServerResponse;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 public interface ProductService {
     ServerResponse productManageList(ProductManageListCommon common);
 

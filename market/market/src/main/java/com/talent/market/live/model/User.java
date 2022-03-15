@@ -8,7 +8,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 @TableName(value = "talent_user")

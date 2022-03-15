@@ -4,7 +4,10 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.util.Date;
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @TableName(value = "talent_category")
 @Data
 public class Category {

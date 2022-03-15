@@ -3,7 +3,7 @@ package com.talent.market.live.util;
 import java.math.BigDecimal;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 public class BigDecimalUtil {

@@ -5,7 +5,10 @@ import com.talent.market.live.common.order.DetailClientOrderCommon;
 import com.talent.market.live.common.order.OrderClientListCommon;
 import com.talent.market.live.util.ServerResponse;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 public interface OrderService {
     ServerResponse createOrder(CreateOrderCommon common, String id, String username);
 

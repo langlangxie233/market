@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 @RequestMapping("/manage/product/")

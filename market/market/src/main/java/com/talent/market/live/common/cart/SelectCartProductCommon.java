@@ -3,7 +3,7 @@ package com.talent.market.live.common.cart;
 import lombok.Data;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 @Data

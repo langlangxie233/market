@@ -1,7 +1,7 @@
 package com.talent.market.live.util;
 
 /**
- * @author huangzhengwei
+ * @author xiexianlang
  * @desc
  */
 public enum ResponseCode {

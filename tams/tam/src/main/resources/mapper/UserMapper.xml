@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxl.tam.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.xxl.tam.model.User">
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="pwd" jdbcType="VARCHAR" property="pwd" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex_id" jdbcType="VARCHAR" property="sexId" />
+    <result column="age_id" jdbcType="VARCHAR" property="ageId" />
+    <result column="occupation_id" jdbcType="VARCHAR" property="occupationId" />
+    <result column="salary_id" jdbcType="VARCHAR" property="salaryId" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="is_deleted" jdbcType="INTEGER" property="isDeleted" />
+    <result column="role" jdbcType="INTEGER" property="role" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    user_id, pwd, name, sex_id, age_id, occupation_id, salary_id, phone, address, is_deleted, 
+    role
+  </sql>
+
+  <select id="login" parameterType="com.xxl.tam.common.user.LoginCommon" resultMap="BaseResultMap">
+      select * from tab_user where user_id=#{userId} and pwd=#{pwd}
+    </select>
+
+  <update id="updateInformation" parameterType="com.xxl.tam.common.user.UpdateInformationCommon">
+      update tab_user set name=#{name},sex_id=#{sexId},age_id=#{ageId},occupation_id=#{occupationId},salary_id=#{salaryId},phone=#{phone},address=#{address} where user_id=#{userId}
+    </update>
+</mapper>

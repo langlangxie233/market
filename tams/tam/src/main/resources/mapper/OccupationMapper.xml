@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xxl.tam.dao.OccupationMapper">
+  <resultMap id="BaseResultMap" type="com.xxl.tam.model.Occupation">
+    <id column="occupation_id" jdbcType="VARCHAR" property="occupationId" />
+    <result column="occupation_name" jdbcType="VARCHAR" property="occupationName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    occupation_id, occupation_name
+  </sql>
+</mapper>

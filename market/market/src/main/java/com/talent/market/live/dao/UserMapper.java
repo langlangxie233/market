@@ -8,7 +8,10 @@ import com.talent.market.live.common.user.UpdateInformationCommon;
 import com.talent.market.live.model.User;
 import org.apache.ibatis.annotations.Mapper;
 
-
+/**
+ * @author xiexianlang
+ * @desc
+ */
 @Mapper
 public interface UserMapper extends BaseMapper<User> {
 
